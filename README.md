@@ -32,8 +32,8 @@ Aqui você pode instalar libs e frameworks de forma isolada e sem medo a env vai
 
 
 ## Habilita banco de dados
-    - python manage.py migrations
     - python manage.py makemigrations
+    - python manage.py migrations
     - python manage.py migrate
 
 ## Criar usuario admin
