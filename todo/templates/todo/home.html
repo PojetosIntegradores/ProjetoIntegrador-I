@@ -1,0 +1,29 @@
+{% extends 'todo/layout.html' %}
+
+{% block body %}
+<div class="container">
+    <table class="table table-striped table-dark">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Tarefas</th>
+                <th scope="col">Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for tarefa in tarefas %}
+            <tr>
+                <th scope="row">{{ tarefa.id }}</th>
+                <td>{{ tarefa }}</td>
+                <td>
+                    <a class="btn btn-danger btn-sm" href="{% url 'deletar' tarefa.id %}">Excluir</a>
+                    <a class="btn btn-primary btn-sm" href="{% url 'editar' tarefa.id %}">Editar</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+
+{% endblock %}
