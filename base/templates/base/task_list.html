@@ -1,0 +1,29 @@
+{% extends 'base/layout.html' %}
+
+{% block body %}
+<h1>My To Do List App</h1>
+<a href="{% url 'task-create' %}">Add task</a>
+<table>
+    <thead>
+        <tr>
+            <th>Item</th>
+            <th>Detail</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for task in tasks %}
+        <tr>
+            <td>{{ task.title }}</td>
+            <td><a href="{% url 'task' task.id %}">view</a></td>
+            <td><a href="{% url 'task-update' task.id %}">edit</a></td>
+            <td><a href="{% url 'task-delete' task.id %}">delete</a></td>
+        </tr>
+        {% empty %}
+        <h3>Lista vazia</h3>
+        {% endfor %}
+    </tbody>
+    
+</table>
+{% endblock %}
