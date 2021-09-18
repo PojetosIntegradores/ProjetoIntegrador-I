@@ -8,6 +8,8 @@
         <tr>
             <th>Item</th>
             <th>Detail</th>
+            <th>Edit</th>
+            <th>Delete</th>
         </tr>
     </thead>
     <tbody>
@@ -15,6 +17,8 @@
         <tr>
             <td>{{ task.title }}</td>
             <td><a href="{% url 'task' task.id %}">view</a></td>
+            <td><a href="{% url 'task-update' task.id %}">edit</a></td>
+            <td><a href="{% url 'task-delete' task.id %}">delete</a></td>
         </tr>
         {% empty %}
         <h3>Lista vazia</h3>
