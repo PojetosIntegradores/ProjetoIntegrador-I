@@ -1,5 +1,6 @@
 {% extends 'base/layout.html' %}
-
+{% load pwa %} 
+{% progressive_web_app_meta %}
 {% block body %}
 <h1>My To Do List App</h1>
 <a href="{% url 'task-create' %}">Add task</a>
