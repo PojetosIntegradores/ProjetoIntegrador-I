@@ -14,7 +14,11 @@
 </head>
 
 <body>
-
+    {% if request.user.is_authenticated %}
+    <p>{{ request.user }}</p>
+    <a href="{% url 'logout' %}">Logout</a>
+    {% endif %}
+    <hr>
     {% block body %}
 
     {% endblock %}
