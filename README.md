@@ -8,6 +8,14 @@ https://drive.google.com/file/d/1GHvHXKmGciiplebmAhUk1HVyZ3ddXPVK/view?usp=shari
 
 https://www.youtube.com/watch?v=llbtoQTt4qw
 
+
+https://www.dennisivy.com/post/django-class-based-views/
+
+
+https://acervolima.com/faca-pwa-de-um-projeto-django/
+
+
+http://ccbv.co.uk/  => Dodumentação do projeto
 ## No linux: Intalção do virtualenv
 
 desktop:~$ pip3 install virtualenv
@@ -35,7 +43,6 @@ Aqui você pode instalar libs e frameworks de forma isolada e sem medo a env vai
 
 
 ## Habilita banco de dados
-    - python manage.py makemigrations
     - python manage.py migrations
     - python manage.py migrate
 
