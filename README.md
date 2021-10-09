@@ -55,3 +55,9 @@ Aqui você pode instalar libs e frameworks de forma isolada e sem medo a env vai
 
 ## 
     - python manage.py shell
+
+## Setup do projeto
+
+appTodo - pasta principal do projeto base para rotas pai, todo/base - pastas onde você desenvolve seu projeto com rotas filhas
+
+manage.py - arquivo principal do projeto.
