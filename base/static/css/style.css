@@ -4,7 +4,7 @@ body {
   padding-top: 50px;
 }
 
-#header-bar-h3{
+#header-bar-h3 {
   margin: 0;
   font-family: "Nunito", sans-serif !important;
 }
@@ -44,7 +44,7 @@ a {
   background: linear-gradient(90deg, #90cbee 0%, #6fa9eb 43%, #6f82eb 100%);
 }
 
-.header-bar a{
+.header-bar a {
   color: rgb(247, 247, 247);
   text-decoration: none;
 }
@@ -90,4 +90,43 @@ a {
   font-size: 22px;
   line-height: 0;
   padding: 20px 0px;
+}
+
+#add-link {
+  color: #eb796f;
+  text-decoration: none;
+  font-size: 42px;
+  text-shadow: 1px 1px #81413b;
+}
+
+#search-add-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+  border: 1px solid #757575;
+  border-radius: 5px;
+  padding: 10px;
+  width: 90%;
+}
+
+label {
+  padding-top: 10px !important;
+  display: block;
+}
+
+.button {
+  border: 1px solid #757575;
+  background-color: #fff;
+  color: #eb796f;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
 }
