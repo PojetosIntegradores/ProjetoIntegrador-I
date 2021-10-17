@@ -86,14 +86,14 @@ a {
 .delete-link {
   text-decoration: none;
   font-weight: 900;
-  color: #cf4949;
+  color: #4956cf;
   font-size: 22px;
   line-height: 0;
   padding: 20px 0px;
 }
 
 #add-link {
-  color: #eb796f;
+  color: #6fa1eb;
   text-decoration: none;
   font-size: 42px;
   text-shadow: 1px 1px #81413b;
@@ -123,10 +123,14 @@ label {
 .button {
   border: 1px solid #757575;
   background-color: #fff;
-  color: #eb796f;
+  color: #6f96eb;
   padding: 10px;
   font-size: 14px;
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
+}
+
+.card-body {
+  padding: 20px;
 }
