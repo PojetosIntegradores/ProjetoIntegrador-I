@@ -16,8 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+# Rotas principais do projeto
 urlpatterns = [
+    path('', include('base.urls')),
     path('admin/', admin.site.urls),
     path('todo/', include('todo.urls')),
-    path('', include('base.urls')),
+    path('', include('pwa.urls')),
 ]
