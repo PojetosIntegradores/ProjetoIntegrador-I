@@ -16,6 +16,11 @@ https://acervolima.com/faca-pwa-de-um-projeto-django/
 
 
 http://ccbv.co.uk/  => Dodumentação do projeto
+
+
+https://sistemadegestaopessaolehome.herokuapp.com/ | https://git.heroku.com/sistemadegestaopessaolehome.git
+
+
 ## No linux: Intalção do virtualenv
 
 desktop:~$ pip3 install virtualenv

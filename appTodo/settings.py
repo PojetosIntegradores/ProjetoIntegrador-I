@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+import django_heroku
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -26,7 +27,7 @@ SECRET_KEY = 'django-insecure-%^18dc3ilx3k9qq+l+^kqn+jjsu9s&7f8-)@cjh4j*cll&@7x#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://sistemadegestaopessaolehome.herokuapp.com/','http://localhost:8000/']
 
 
 # Application definition
@@ -164,3 +165,5 @@ PWA_APP_SPLASH_SCREEN = [
 ]
 PWA_APP_DIR = 'ltr'
 PWA_APP_LANG = 'en-US'
+
+django_heroku.settings(locals())
